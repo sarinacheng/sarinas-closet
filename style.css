@@ -69,6 +69,12 @@ h1 {
     text-align: center;
 }
 
+.border {
+    border-radius: 10px;
+    border: 0.05rem solid black;
+    
+}
+
 /* rags clothing item */
 #clothing-rags {
     background-color: black;
@@ -132,4 +138,19 @@ h1 {
     background-color: white;
 }
 
+#rouge-title {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 7% 4%;
+    background-color: aqua;
+}
+
+#clothing-rouge .clothing-header {
+    padding-left: 3%;
+}
+#clothing-rouge .clothing-description {
+    text-align: left;
+    padding: 3%;
+}
 
