@@ -1,0 +1,135 @@
+html {
+ background-color: white;
+ box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Archivo", sans-serif;
+    font-size: 10pt;
+}
+
+#main-container {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    max-width: 1440px;
+
+    background-color: green;
+}
+
+/* banner */
+#banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+h1 {
+    font-stretch: expanded;
+    font-weight: 900;
+    font-size: 7vw;
+    max-width: 600px;
+    line-height: 80%;
+    padding: 5%;
+}
+
+#banner img {
+    width: 100vw;
+    max-width: 400px;
+}
+
+/* general clothing item formatting */
+.clothing-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.clothing-header {
+    font-weight: 900;
+    font-size: 1.85rem;
+}
+
+.clothing-img {
+    padding: 7%;
+    width: 80vw;
+}
+
+.clothing-description {
+    padding: 5%;
+    padding-bottom: 7%;
+    text-align: center;
+}
+
+/* rags clothing item */
+#clothing-rags {
+    background-color: black;
+}
+
+#clothing-rags h2, #clothing-rags p {
+    color: white;
+}
+
+/* brat summer clothing item */
+#clothing-brat {
+    background-color: white;
+}
+
+#clothing-brat h2 {
+    font-stretch: expanded;
+}
+
+#clothing-brat iframe {
+    padding-top: 3.8%;
+}
+
+/* ikea clothing item */
+#clothing-ikea {
+    background-color: navy;
+    position: relative;
+}
+
+#ikea-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 4%;
+    position: absolute;
+}
+
+#ikea-logo {
+    width: 200px;
+}
+
+#clothing-ikea .clothing-header {
+    color: white;
+    font-style: italic;
+    font-weight: 700;
+    position: absolute;
+    left: 78%;
+    top: 85%;
+    z-index: 2;
+}
+
+#clothing-ikea .clothing-img {
+    z-index: 1;
+    padding-top: 15%;
+}
+
+#clothing-ikea .clothing-description {
+    color: white;
+    padding-top: 0%;
+}
+
+#clothing-rouge {
+    background-color: white;
+}
+
+
