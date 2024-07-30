@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarina's Closet</title>
-
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,21 +23,21 @@
         </div>
         <div id="clothing-rags" class="clothing-item">
             <img class="clothing-img" src="./images/rags.png" alt="green top with floral print">
-            <h2 class="clothing-header">rags to <i>riches</i></h2>
+            <div class="clothing-text">
+                <h2 class="clothing-header">rags to <i>riches</i></h2>
             <p class="clothing-description">Originally a t-shirt. Cropped it with a lettuce trim, cut the neckline and
                 replaced it with an adjustable string.</p>
+            </div>
         </div>
         <div id="clothing-brat" class="clothing-item">
             <img class="clothing-img" src="./images/brat.png" alt="green dress shirt with pleated hem">
             <div class="border"></div>
-            <h2 class="clothing-header">BraT SummeR !</h2>
-            <iframe style="border-radius:12px"
-                src="https://open.spotify.com/embed/track/5sMEEjviCkH6Rp5X2ZvIIc?utm_source=generator&theme=0"
-                height="98" frameBorder="0" allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"></iframe>
-            <p class="clothing-description">Stuffy dress shirt transformed. Cut off the sleeves and used it to add a
-                pleated edge to the bottom of the shirt.</p>
+            <div class="clothing-text">
+                <h2 class="clothing-header">BraT SummeR !</h2>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5sMEEjviCkH6Rp5X2ZvIIc?utm_source=generator&theme=0" width="75%" height="152px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <p class="clothing-description">Stuffy dress shirt transformed. Cut off the sleeves and used it to add a
+                    pleated edge to the bottom of the shirt.</p>
+            </div>
         </div>
         <div id="clothing-ikea" class="clothing-item">
             <div id="ikea-title">
@@ -49,18 +49,23 @@
         </div>
         <div id="clothing-rouge" class="clothing-item">
             <img class="clothing-img" src="./images/rouge.png" alt="red and black top">
-            <div id="rouge-text" class="border">
-                <h2 class="clothing-header">le <span>rouge</span> et le noir</h2>
+            <div id="rouge-text" class="border clothing-text">
+                <h2 class="clothing-header"><i>le <span>rouge</span> et le noir.</i></h2>
                 <p class="clothing-description">Added red fabric to a plain black cardigan for layering.</p>
+                <img id="rose-img" src="./images/rose.png" alt="rose">          
             </div>  
-            <img id="rose-img" src="./images/rose.png" alt="rose">          
         </div>
         <div id="clothing-granny" class="clothing-item">
             <img class="clothing-img" src="./images/granny.png" alt="brown knit vest">
-            <h2 class="clothing-header">granny smith</h2>
+            <div class="clothing-text">
+                <h2 class="clothing-header">granny smith</h2>
             <p class="clothing-description">Hand-knit vest I made with my grandma.</p>
+            </div> 
         </div>
     </div>
+    <footer>
+        MORE TO COME...
+    </footer>
 
     <script scr="./index.js"></script>
 </body>

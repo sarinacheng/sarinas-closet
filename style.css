@@ -11,15 +11,11 @@ html {
 
 body {
     font-family: "Archivo", sans-serif;
-    font-size: 10pt;
+    font-size: 2.5vw;
 }
 
 #main-container {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     max-width: 1440px;
-
     background-color: green;
 }
 
@@ -29,21 +25,20 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: rgb(252, 237, 224);
 }
 
 h1 {
     font-stretch: expanded;
     font-weight: 900;
     font-size: 7vw;
-    max-width: 600px;
     line-height: 80%;
     padding: 5%;
 }
 
 #banner img {
     width: 100vw;
-    max-width: 400px;
+    padding: 0% 5%;
 }
 
 /* general clothing item formatting */
@@ -55,12 +50,19 @@ h1 {
 
 .clothing-header {
     font-weight: 900;
-    font-size: 1.85rem;
+    font-size: 8vw;
+}
+
+.clothing-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .clothing-img {
     padding: 7%;
     width: 80vw;
+    max-width: 350px;
 }
 
 .clothing-description {
@@ -94,12 +96,12 @@ h1 {
 }
 
 #clothing-brat iframe {
-    padding-top: 3.8%;
+    margin-top: 3.8%;
 }
 
 /* ikea clothing item */
 #clothing-ikea {
-    background-color: navy;
+    background-color: rgb(0, 0, 112);
     position: relative;
 }
 
@@ -111,7 +113,7 @@ h1 {
 }
 
 #ikea-logo {
-    width: 200px;
+    width: 60vw;
 }
 
 #clothing-ikea .clothing-header {
@@ -134,30 +136,130 @@ h1 {
     padding-top: 0%;
 }
 
+/* red and black clothing item */
 #clothing-rouge {
     background-color: white;
 }
 
 #rouge-text {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    padding: 7% 4%;
-    background-color: aqua;
+    margin-bottom: 5%;
+    padding: 5% 3%;
+    z-index: 1;
+    position: relative;
 }
 
 #rouge-text .clothing-header {
     padding-left: 3%;
 }
+
+#rouge-text span {
+    color: rgb(133, 6, 6);
+}
 #rouge-text .clothing-description {
     text-align: left;
-    padding: 3%;
+    padding: 2% 0% 2%;
 }
 
 #rose-img {
-    width: 15vw;
+    width: 17vw;
     position: absolute;
-    right: 10%;
-    top: -10%;
+    z-index: 0;
+    right: -10%;
+    bottom: -12%;
 }
 
+/* granny clothing item */
+#clothing-granny {
+    background-color: black;
+}
+
+#clothing-granny .clothing-header {
+    color: white;
+    font-stretch: expanded;
+}
+
+#clothing-granny .clothing-description {
+    color: white;
+}
+
+footer {
+    font-stretch: expanded;
+    text-align: center;
+    padding: 8%;
+    font-weight: 800;
+    font-size: 6.5vw;
+    background-color: rgb(252, 237, 224);
+}
+
+@media (min-width: 576px) {
+    #banner h1 {
+        width: 50%;
+        padding-left: 7%;
+    }
+
+    #banner img {
+        width: 50%;
+        padding-right: 7%;
+    }
+
+    .clothing-item {
+        flex-direction: row;
+    }
+    .clothing-item .clothing-img {
+        width: 40%;
+        max-width: 500px;
+    }
+
+    .clothing-text {
+        align-items: flex-start;
+        margin-right: 5%;
+    }
+
+    .clothing-description {
+        text-align: left;
+        padding: 4% 0% 6%;
+        font-size: 14pt;
+        max-width: 95%;
+    }
+
+    #clothing-rags .clothing-text {
+        padding-right: 5%;
+        flex-basis: 60%;
+    }
+
+    #clothing-brat .clothing-header {
+        padding-top: 3%;
+    }
+
+    /* ikea */
+    #clothing-ikea {
+        flex-direction: column;
+    }
+
+    #clothing-ikea .clothing-img {
+        width:80vw;
+        max-width: 500px;
+    }
+
+    #ikea-logo {
+        max-width: 350px;
+    }
+
+    #rouge-text {
+        order: 1;
+        margin-left: 5%;
+    }
+
+    #clothing-rouge .clothing-img {
+        order: 2;
+    }
+
+    #rose-img {
+        right: -15%;
+        bottom: -15%;
+    }
+}
+
+@media (min-width: 850px) {
+
+}
