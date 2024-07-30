@@ -69,6 +69,12 @@ h1 {
     text-align: center;
 }
 
+.border {
+    border-radius: 10px;
+    border: 0.05rem solid black;
+    
+}
+
 /* rags clothing item */
 #clothing-rags {
     background-color: black;
@@ -120,7 +126,7 @@ h1 {
 
 #clothing-ikea .clothing-img {
     z-index: 1;
-    padding-top: 15%;
+    padding-top: 13%;
 }
 
 #clothing-ikea .clothing-description {
@@ -132,4 +138,26 @@ h1 {
     background-color: white;
 }
 
+#rouge-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 7% 4%;
+    background-color: aqua;
+}
+
+#rouge-text .clothing-header {
+    padding-left: 3%;
+}
+#rouge-text .clothing-description {
+    text-align: left;
+    padding: 3%;
+}
+
+#rose-img {
+    width: 15vw;
+    position: absolute;
+    right: 10%;
+    top: -10%;
+}
 
