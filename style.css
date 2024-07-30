@@ -16,7 +16,6 @@ body {
 
 #main-container {
     max-width: 1440px;
-    background-color: green;
 }
 
 /* banner */
@@ -25,7 +24,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: rgb(252, 237, 224);
+    background-color: white;
 }
 
 h1 {
@@ -188,7 +187,7 @@ footer {
     padding: 8%;
     font-weight: 800;
     font-size: 6.5vw;
-    background-color: rgb(252, 237, 224);
+    background-color: white;
 }
 
 @media (min-width: 576px) {
