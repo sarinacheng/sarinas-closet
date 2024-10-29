@@ -1,1 +1,1 @@
-mini closet
+a mini closet
